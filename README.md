@@ -8,6 +8,6 @@ This repository serves as summary of work-flows, tools and scripts for various g
 2. Assembly QC
 3. Annotation of the genome
 4. Comparison of genesets
-   a. Orthofinder (well-annotated)
-   b. BLAST (no or bad annotation)
+   1. Orthofinder (well-annotated) | **[in progress]**
+   2. BLAST (no or bad annotation)
 5. 
