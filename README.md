@@ -10,4 +10,4 @@ This repository serves as summary of work-flows, tools and scripts for various g
 4. Comparison of genesets
    1. Orthofinder (well-annotated) | **[in progress]**
    2. BLAST (no or bad annotation)
-5. 
+5. GC content
