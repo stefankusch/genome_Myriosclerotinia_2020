@@ -23,6 +23,7 @@ awk '{gsub("-", "");print}' subset.sequences.fasta > sequences.fasta
 ```
 
 
+
 #### Splitting a genome file into chromsome files
 
 This perl-script will do the job. Copy the script in a file (e.g. with nano or editor) and call it `split.pl`.
