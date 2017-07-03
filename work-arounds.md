@@ -1,7 +1,8 @@
 This document contains a collection of work-arounds that I found helpful at some point.
 
 1. Printing specific fasta sequences from a fasta file
-2. 
+2. Splitting a genome file into chromsome files
+3. 
 
 
 #### Printing specific fasta sequences from a fasta file
@@ -21,3 +22,36 @@ If you look at the file, you see that there is a line containing `--` between ev
 awk '{gsub("-", "");print}' subset.sequences.fasta > sequences.fasta
 ```
 
+
+#### Splitting a genome file into chromsome files
+
+This perl-script will do the job. Copy the script in a file (e.g. with nano or editor) and call it `split.pl`.
+
+```perl
+#!/usr/bin/perl
+
+$f = $ARGV[0]; #get the file name
+
+open (INFILE, "<$f")
+or die "Can't open: $f $!";
+
+while (<INFILE>) {
+$line = $_;
+chomp $line;
+if ($line =~ /\>/) { #if has fasta >
+close OUTFILE;
+$new_file = substr($line,1);
+$new_file .= ".fa";
+open (OUTFILE, ">$new_file")
+or die "Can't open: $new_file $!";
+}
+print OUTFILE "$line\n";
+}
+close OUTFILE;
+```
+
+Run it with 
+```
+perl PATH/split.pl PATH/genome.fasta 
+``` 
+after navigating into the directory where the chromosome files are supposed to be stored. 
