@@ -21,6 +21,10 @@ If you look at the file, you see that there is a line containing `--` between ev
 ```
 awk '{gsub("-", "");print}' subset.sequences.fasta > sequences.fasta
 ```
+And, to remove the empty lines, use `grep` again:
+```
+grep -v -e '^$' sequences.fasta > sequences.final.fasta
+```
 
 
 
