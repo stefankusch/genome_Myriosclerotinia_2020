@@ -26,6 +26,20 @@ And, to remove the empty lines, use `grep` again:
 grep -v -e '^$' sequences.fasta > sequences.final.fasta
 ```
 
+Note: Mind that in case of numbering of contigs, scaffolds, etc, grep will find all occurences. Thus, do not name 
+```
+contig_1
+contig_2
+...
+```
+but rather
+```
+contig_0001
+contig_0002
+...
+contig_0805
+```
+
 
 
 #### Splitting a genome file into chromsome files
