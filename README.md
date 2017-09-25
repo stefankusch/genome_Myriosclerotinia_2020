@@ -7,6 +7,8 @@ This repository serves as summary of work-flows, tools and scripts for various g
 1. Genome assembly
 2. Assembly QC
 3. Annotation of the genome | **[in progress]**
+   1. Masking repeates and *ab initio* prediction
+   2. Functional gene annotations (PFAM, SignalP, GO, ...)
 4. Comparison of genesets
    1. Orthofinder & OrthoMCL (well-annotated) | **[in progress]**
    2. BLAST (no or bad annotation)
