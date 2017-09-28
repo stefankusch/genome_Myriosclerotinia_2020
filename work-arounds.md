@@ -50,7 +50,7 @@ contig_0805
 
 This perl-script will do the job. Copy the script in a file (e.g. with nano or editor) and call it `split.pl`.
 
-```perl6
+```Perl
 #!/usr/bin/perl
 
 $f = $ARGV[0]; #get the file name
