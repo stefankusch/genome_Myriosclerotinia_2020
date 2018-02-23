@@ -82,6 +82,6 @@ after navigating into the directory where the chromosome files are supposed to b
 
 #### .fastq/.fq to .fasta
 A simple tool can be used to convert fastq files to fasta files:
-```
+```ShellSession
 seqtk seq -a input.fastq > output.fasta
 ```
