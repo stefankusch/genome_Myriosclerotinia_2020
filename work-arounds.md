@@ -2,7 +2,7 @@ This document contains a collection of work-arounds that I found helpful at some
 
 1. Printing specific fasta sequences from a fasta file
 2. Splitting a genome file into chromsome files
-3. 
+3. fastq or fq to fasta
 
 
 #### Printing specific fasta sequences from a fasta file
@@ -78,3 +78,10 @@ Run it with
 perl PATH/split.pl PATH/genome.fasta 
 ``` 
 after navigating into the directory where the chromosome files are supposed to be stored. 
+
+
+#### .fastq/.fq to .fasta
+A simple tool can be used to convert fastq files to fasta files:
+```
+seqtk seq -a input.fastq > output.fasta
+```
