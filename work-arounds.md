@@ -2,7 +2,8 @@ This document contains a collection of work-arounds that I found helpful at some
 
 1. Printing specific fasta sequences from a fasta file
 2. Splitting a genome file into chromsome files
-3. fastq or fq to fasta
+3. Sorting fasta file entries by header name
+4. fastq or fq to fasta
 
 
 #### Printing specific fasta sequences from a fasta file
@@ -78,6 +79,13 @@ Run it with
 perl PATH/split.pl PATH/genome.fasta 
 ``` 
 after navigating into the directory where the chromosome files are supposed to be stored. 
+
+
+#### Sorting fasta file entries by header name
+I found the following `perl`/`sed` script to work nicely. 
+```Perl
+perl -pe 's/[\r\n]+/;/g; s/>/\n>/g' input-fasta.fa | sort -t"[" -k2,2V | sed 's/;/\n/g' | sed '/^$/d' > fasta_sorted.fa
+```
 
 
 #### .fastq/.fq to .fasta
