@@ -14,3 +14,4 @@ This repository serves as summary of work-flows, tools and scripts for various g
    2. BLAST (no or bad annotation)
    3. Mapping genomic reads against genes of reference genome
 5. GC content
+6. Synteny (MUMmer)
