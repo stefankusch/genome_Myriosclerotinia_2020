@@ -26,9 +26,9 @@ And, to remove the empty lines, use `grep` again:
 ```ShellSession
 grep -v -e '^$' sequences.fasta > sequences.final.fasta
 ```
-You can also run all this in one line, a bit messy but functions efficiently:
+You can also run all this in one line, a bit messy but functions efficiently. The `grep -c` command at the end is to count fasta headers, which helps to assess whether the correct number of genes is in the new fasta file:
 ```ShellSession
-grep -A1 -F -f list.genes-of-interest.txt sequences.fasta > tmp1.fasta; awk '{gsub("-", "");print}' tmp1.fasta > tmp1.out; grep -v -e '^$' tmp1.out > genes-of-interest.fasta; rm tmp1.out tmp1.fasta; head genes-of-interest.fasta; head list.genes-of-interest.txt
+grep -A1 -Fwf list_genes.txt sequences.fasta | awk '{gsub("-", "");print}' | grep -v -e '^$' > list_genes.fasta; grep -c '^>' list_genes.fasta
 ```
 
 Note: Mind that in case of numbering of contigs, scaffolds, etc, grep will find all occurences. Thus, do not name 
