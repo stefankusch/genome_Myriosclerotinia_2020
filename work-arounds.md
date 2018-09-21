@@ -4,6 +4,7 @@ This document contains a collection of work-arounds that I found helpful at some
 2. Splitting a genome file into chromsome files
 3. Sorting fasta file entries by header name
 4. fastq or fq to fasta
+5. (basic unix) Using `sed` to replace text in a file
 
 
 #### Printing specific fasta sequences from a fasta file
@@ -92,4 +93,15 @@ perl -pe 's/[\r\n]+/;/g; s/>/\n>/g' input-fasta.fa | sort -t"[" -k2,2V | sed 's/
 A simple tool can be used to convert fastq files to fasta files:
 ```ShellSession
 seqtk seq -a input.fastq > output.fasta
+```
+
+
+#### Using `sed` to replace text in a file
+This line directly replaces the text `Pattern` in the file. Does not write a new file.
+```ShellSession
+sed -i 's/PATTERN/REPLACEMENT/' file.name
+``` 
+To do that for all instances in the file:
+```ShellSession
+sed -i 's/PATTERN/REPLACEMENT/g' file.name
 ```
