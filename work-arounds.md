@@ -105,3 +105,8 @@ To do that for all instances in the file:
 ```ShellSession
 sed -i 's/PATTERN/REPLACEMENT/g' file.name
 ```
+
+And to do that for a character string of all types of characters:
+```
+sed 's/string.*//g' input.file > output.file
+```
