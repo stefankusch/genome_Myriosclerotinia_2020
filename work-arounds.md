@@ -16,7 +16,7 @@ while read line;do if [ "${line:0:1}" '==' ">" ]; then echo -e "\n"$line; else e
 ```
 
 Careful: if your `list.genes-of-interest.txt` was made in Windows, you may need to remove the DOS-specific line breaks first:
-```
+```ShellSession
 awk '{ sub("\r$", ""); print }' list.genes-of-interest.txt > list.genes-of-interest_fixed.txt
 ```
 
