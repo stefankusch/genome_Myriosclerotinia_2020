@@ -119,7 +119,7 @@ output.upstream1000.fasta #1000 bp upstream sequences (in original script, 3000 
 
 
 #### Using `sed` to replace text in a file
-This line directly replaces the text `Pattern` in the file. Does not write a new file.
+This line directly replaces the text `Pattern` in the file. Does not write a new file due to `-i` option.
 ```ShellSession
 sed -i 's/PATTERN/REPLACEMENT/' file.name
 ``` 
