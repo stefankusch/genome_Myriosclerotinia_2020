@@ -15,9 +15,14 @@ One problem is that fasta sequences are often wrapped, i.e. there is a line brea
 while read line;do if [ "${line:0:1}" '==' ">" ]; then echo -e "\n"$line; else echo $line | tr -d '\n' ; fi; done < 1980_CDS.fa > 1980_CDS.fasta
 ```
 
+Careful: if your `list.genes-of-interest.txt` was made in Windows, you may need to remove the DOS-specific line breaks first:
+```
+awk '{ sub("\r$", ""); print }' list.genes-of-interest.txt > list.genes-of-interest_fixed.txt
+```
+
 Then, you can print the sequences of the genes you are interested in to a new file using `grep`.
 ```ShellSession
-grep -A1 -f list.genes-of-interest.txt 1980_CDS.fasta > subset.sequences.fasta
+grep -A1 -Fwf list.genes-of-interest.txt 1980_CDS.fasta > subset.sequences.fasta
 ```
 
 If you look at the file, you see that there is a line containing `--` between every fasta entry now. To remove that, do
