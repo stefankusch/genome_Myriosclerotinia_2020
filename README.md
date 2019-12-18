@@ -1,17 +1,28 @@
-## Genome assembly
+## Genome assembly of *Myriosclerotinia sulcatula*
 
-This repository serves as summary of work-flows, tools and scripts for various genome assembly tasks. Please refer to the respective manuals for functionality and options. 
+In this repository, I summarize the scripts and tools I used to perform the assembly of the genome of *Myriosclerotinia sulcatula*. The publication can be found **here**.
 
 #### Index
 
-1. Genome assembly
-2. Assembly QC
-3. Annotation of the genome | **[in progress]**
-   1. Masking repeates and *ab initio* prediction
-   2. Functional gene annotations (PFAM, SignalP, GO, ...)
-4. Comparison of genesets
-   1. Orthofinder & OrthoMCL (well-annotated) | **[in progress]**
-   2. BLAST (no or bad annotation)
-   3. Mapping genomic reads against genes of reference genome
-5. GC content
-6. Synteny (MUMmer)
+01. Genome assembly with `Canu` and polishing with `Pilon`.
+02. Assembly quality control by use of `Blobtools`.
+03. Basic genome analysis
+04. Gene annotation *ab initio* via `Augustus`/`BRAKER2`
+05. Manual curation of gene models using `WebApollo`
+
+#### References
+
+Canu [ref]
+Pilon [ref]
+HISAT2 [ref]
+Samtools [ref]
+NCBI Blast+ [ref]
+Blobtools [ref]
+RepeatMasker [ref]
+Augustus [ref]
+BRAKER2 [ref]
+PFAM/hmmscan [ref]
+SignalP4.1 [ref]
+TMHMM [ref]
+EffectorP 2.0 [ref]
+WebApollo [ref]
