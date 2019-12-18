@@ -9,6 +9,7 @@ In this repository, I summarize the scripts and tools I used to perform the asse
 03. Basic genome analysis
 04. Gene annotation *ab initio* via `Augustus`/`BRAKER2`
 05. Manual curation of gene models using `WebApollo`
+06. Functional annotation of the proteome. 
 
 #### References
 
