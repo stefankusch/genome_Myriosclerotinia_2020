@@ -1,6 +1,6 @@
-## Genome analysis
+## Genome assembly
 
-This repository serves as summary of work-flows, tools and scripts for various genome analysis tasks. Please refer to the respective manuals for functionality and options. 
+This repository serves as summary of work-flows, tools and scripts for various genome assembly tasks. Please refer to the respective manuals for functionality and options. 
 
 #### Index
 
