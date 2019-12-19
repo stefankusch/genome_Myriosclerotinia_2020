@@ -13,18 +13,18 @@ In this repository, I summarize the scripts and tools I used to perform the asse
 
 #### References
 
-Canu (http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5411767)
-
-Pilon [ref]
-HISAT2 [ref]
-Samtools [ref]
-NCBI Blast+ [ref]
-Blobtools [ref]
-RepeatMasker [ref]
-Augustus [ref]
-BRAKER2 [ref]
-PFAM/hmmscan [ref]
-SignalP4.1 [ref]
-TMHMM [ref]
-EffectorP 2.0 [ref]
-WebApollo [http://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-8-r93]
+- Canu [Publication](http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5411767)
+- Pilon [ref]
+- HISAT2 [ref]
+- Samtools [ref]
+- gffread 
+- NCBI Blast+ [ref]
+- Blobtools [ref]
+- RepeatMasker [ref]
+- Augustus [ref]
+- BRAKER2 [ref]
+- PFAM/hmmscan [ref]
+- SignalP4.1 [ref]
+- TMHMM [ref]
+- EffectorP 2.0 [ref]
+- WebApollo [http://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-8-r93]
