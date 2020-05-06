@@ -1,6 +1,6 @@
 ## Genome assembly of *Myriosclerotinia sulcatula*
 
-In this repository, I summarize the scripts and tools I used to perform the assembly of the genome of *Myriosclerotinia sulcatula*. The publication can be found **here**.
+In this repository, I summarize the scripts and tools I used to perform the assembly of the genome of *Myriosclerotinia sulcatula*. The publication can be found [here](https://doi.org/10.1094/MPMI-03-20-0060-A).
 
 #### Index
 
